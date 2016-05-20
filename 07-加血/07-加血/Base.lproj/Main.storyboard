@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view tag="103" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0ep-1q-0Mf">
+                                <rect key="frame" x="150" y="180" width="100" height="100"/>
+                            </view>
+                            <view tag="102" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxM-hM-ZVq">
+                                <rect key="frame" x="150" y="280" width="100" height="100"/>
+                            </view>
+                            <view tag="101" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7se-Cw-6Jt">
+                                <rect key="frame" x="150" y="380" width="100" height="100"/>
+                            </view>
+                            <view tag="104" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TVn-zJ-WSm">
+                                <rect key="frame" x="150" y="80" width="100" height="100"/>
+                            </view>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ayZ-q8-Oqp">
+                                <rect key="frame" x="100" y="80" width="200" height="400"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0wR-c1-TJg" appends="YES" id="g0I-V2-SP7"/>
+                                    <outletCollection property="gestureRecognizers" destination="WGw-so-3n8" appends="YES" id="QKj-vc-UWW"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.89432309089999995" green="1" blue="0.96801657559999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="View1" destination="TVn-zJ-WSm" id="VVg-b6-9rh"/>
+                        <outlet property="View2" destination="0ep-1q-0Mf" id="PrX-M6-MBg"/>
+                        <outlet property="View3" destination="JxM-hM-ZVq" id="Tdo-pn-R1p"/>
+                        <outlet property="View4" destination="7se-Cw-6Jt" id="yVH-KC-9a6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="0wR-c1-TJg">
+                    <connections>
+                        <action selector="swipeGestureUp:" destination="BYZ-38-t0r" id="SEa-4m-ejf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="WGw-so-3n8">
+                    <connections>
+                        <action selector="swipeGestureDown:" destination="BYZ-38-t0r" id="6r1-01-kdK"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="340" y="429"/>
+        </scene>
+    </scenes>
+</document>
